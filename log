@@ -98,3 +98,9 @@ exercises.c:60:5: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 60bd890
+Sun 24 Mar 2024 12:35:00 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|3
+total_score: 20/70
+87237b9
