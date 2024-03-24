@@ -447,3 +447,8 @@ exercises.c:112:49: error: initialization of ‘int *’ from ‘int’ makes po
 cc1: all warnings being treated as errors
 Compilation failed
 3ba9154
+Sun 24 Mar 2024 01:53:56 AM UTC: 
+ exercises.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+ tests:  0|0
+ce891d2
