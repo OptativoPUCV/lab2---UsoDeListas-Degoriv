@@ -66,3 +66,21 @@ exercises.c:61:14: error: unused variable ‘cont’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 cafafe5
+Sun 24 Mar 2024 12:34:09 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:25: error: ‘suma’ undeclared (first use in this function)
+   65 |                         suma += *entero;
+      |                         ^~~~
+exercises.c:65:25: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:66:30: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   66 |                         cont = (int*)next(L);
+      |                              ^
+exercises.c:61:14: error: variable ‘cont’ set but not used [-Werror=unused-but-set-variable]
+   61 |          int cont = 0;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a47a798
