@@ -404,3 +404,17 @@ exercises.c:99:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 053305f
+Sun 24 Mar 2024 01:45:47 AM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:103:32: error: comparison between pointer and integer [-Werror]
+  103 |                 while (top(P1) != -1)
+      |                                ^~
+exercises.c:110:33: error: comparison between pointer and integer [-Werror]
+  110 |                 while (top(aux) != -1)
+      |                                 ^~
+cc1: all warnings being treated as errors
+Compilation failed
+680b1b4
