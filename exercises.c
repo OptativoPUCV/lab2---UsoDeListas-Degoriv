@@ -60,9 +60,11 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
 	 int cont = 0;
 	 int *entero = (int *)first(L);
-	 while (entero != NULL);
+	 while (entero != NULL)
+		 {
 	 		suma += *entero;
 			dato = (int*)next(L);
+		 }
    return 0;
 }
 

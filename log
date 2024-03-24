@@ -48,3 +48,21 @@ exercises.c:61:14: error: unused variable ‘cont’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e509ace
+Sun 24 Mar 2024 12:32:39 AM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:25: error: ‘suma’ undeclared (first use in this function)
+   65 |                         suma += *entero;
+      |                         ^~~~
+exercises.c:65:25: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:66:25: error: ‘dato’ undeclared (first use in this function)
+   66 |                         dato = (int*)next(L);
+      |                         ^~~~
+exercises.c:61:14: error: unused variable ‘cont’ [-Werror=unused-variable]
+   61 |          int cont = 0;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cafafe5
