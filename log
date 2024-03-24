@@ -116,3 +116,9 @@ exercises.c:84:38: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 Compilation failed
 fcd568d
+Sun 24 Mar 2024 12:49:41 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|2
+total_score: 40/70
+da6fbaa
