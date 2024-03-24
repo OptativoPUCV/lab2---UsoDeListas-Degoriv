@@ -104,3 +104,15 @@ Sun 24 Mar 2024 12:35:00 AM UTC:
  tests:  0|3
 total_score: 20/70
 87237b9
+Sun 24 Mar 2024 12:49:05 AM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:84:38: error: dereferencing ‘void *’ pointer [-Werror]
+   84 |                          if (elem == *entero)
+      |                                      ^~~~~~~
+exercises.c:84:38: error: void value not ignored as it ought to be
+cc1: all warnings being treated as errors
+Compilation failed
+fcd568d
