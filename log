@@ -345,3 +345,62 @@ exercises.c:99:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 9c0fbf2
+Sun 24 Mar 2024 01:44:49 AM UTC: 
+ exercises.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:103:32: error: comparison between pointer and integer [-Werror]
+  103 |                 while (top(P1) != -1)
+      |                                ^~
+exercises.c:105:48: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  105 |                                 int elemento = top(P1);
+      |                                                ^~~
+exercises.c:106:43: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  106 |                                 push(aux, elemento);
+      |                                           ^~~~~~~~
+      |                                           |
+      |                                           int
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:110:33: error: comparison between pointer and integer [-Werror]
+  110 |                 while (top(aux) != -1)
+      |                                 ^~
+exercises.c:112:48: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  112 |                                 int elemento = top(aux);
+      |                                                ^~~
+exercises.c:113:42: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  113 |                                 push(P1, elemento);
+      |                                          ^~~~~~~~
+      |                                          |
+      |                                          int
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:114:42: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  114 |                                 push(P2, elemento);
+      |                                          ^~~~~~~~
+      |                                          |
+      |                                          int
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:118:24: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  118 |                 return P2;
+      |                        ^~
+exercises.c:99:6: note: declared here
+   99 | void copia_pila(Stack* P1, Stack* P2)
+      |      ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+053305f
