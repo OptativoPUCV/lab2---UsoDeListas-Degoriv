@@ -84,3 +84,17 @@ exercises.c:61:14: error: variable ‘cont’ set but not used [-Werror=unused-b
 cc1: all warnings being treated as errors
 Compilation failed
 a47a798
+Sun 24 Mar 2024 12:34:50 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:68:4: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+   68 |    return ;
+      |    ^~~~~~
+exercises.c:60:5: note: declared here
+   60 | int sumaLista(List *L) {
+      |     ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+60bd890

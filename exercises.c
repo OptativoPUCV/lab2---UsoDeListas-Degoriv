@@ -62,10 +62,10 @@ int sumaLista(List *L) {
 	 int *entero = (int *)first(L);
 	 while (entero != NULL)
 		 {
-	 		suma += *entero;
-			cont = (int*)next(L);
+	 		cont += *entero;
+			entero = (int*)next(L);
 		 }
-   return 0;
+   return ;
 }
 
 /*
