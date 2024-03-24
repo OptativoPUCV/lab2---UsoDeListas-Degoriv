@@ -433,3 +433,17 @@ Sun 24 Mar 2024 01:49:45 AM UTC:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 82308f8
+Sun 24 Mar 2024 01:51:46 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:105:49: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  105 |                                 int* elemento = *(int*)top(P1);
+      |                                                 ^
+exercises.c:112:49: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  112 |                                 int* elemento = *(int*)top(aux);
+      |                                                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+3ba9154
