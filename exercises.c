@@ -131,7 +131,7 @@ int parentesisBalanceados(char *cadena) {
 				{
 			  char *cadPtr = (char*) malloc(sizeof(char));
 				*cadPtr = cadena[i];
-			  push(aux, *cadPtr);
+			  push(aux, cadPtr);
 				}
 					
 		 }
