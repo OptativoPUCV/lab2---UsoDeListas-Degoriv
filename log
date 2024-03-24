@@ -4,3 +4,25 @@ Sun 24 Mar 2024 12:24:40 AM UTC:
  tests:  1|4
 total_score: 10/70
 37d3a07
+Sun 24 Mar 2024 12:30:41 AM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:63:10: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   63 |          while (entero != NULL);
+      |          ^~~~~
+exercises.c:64:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   64 |                         suma += entero;
+      |                         ^~~~
+exercises.c:64:25: error: ‘suma’ undeclared (first use in this function)
+exercises.c:64:25: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:65:25: error: ‘dato’ undeclared (first use in this function)
+   65 |                         dato = (int*)next(L);
+      |                         ^~~~
+exercises.c:61:14: error: unused variable ‘cont’ [-Werror=unused-variable]
+   61 |          int cont = 0;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+939d728
